@@ -5,7 +5,6 @@ public class Equip implements InterfaceEquip {
 	private String description;
 	private Integer currency;
 	
-	private enum Rewards{};
 	private enum rare{};
 
 	public String getDescription() {
@@ -23,4 +22,6 @@ public class Equip implements InterfaceEquip {
 	public void setCurrency(Integer currency) {
 		this.currency = currency;
 	}
+
+
 }

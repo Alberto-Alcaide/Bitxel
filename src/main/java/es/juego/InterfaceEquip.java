@@ -7,7 +7,9 @@ public interface InterfaceEquip {
 	
 	public void setDescription(String description);
 	
-	public Integer getPrice();
-	
-	public void setPrice(Integer price);
+	public Integer getCurrency();
+
+	public void setCurrency(Integer currency);
+
+
 }
