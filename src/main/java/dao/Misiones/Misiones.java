@@ -1,4 +1,4 @@
-package dao;
+package dao.Misiones;
 
 public interface Misiones {
 

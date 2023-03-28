@@ -1,4 +1,4 @@
-package dao;
+package dao.Equip;
 
 
 public interface InterfaceEquip {
