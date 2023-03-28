@@ -2,7 +2,6 @@ package dao.Equip;
 
 import java.util.Comparator;
 
-import es.loyola.pdm.dao.Coche;
 
 public class ComparatorEquip implements Comparator<Equip> {
 	
