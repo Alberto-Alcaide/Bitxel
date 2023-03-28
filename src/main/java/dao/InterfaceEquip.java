@@ -1,4 +1,4 @@
-package es.juego;
+package dao;
 
 
 public interface InterfaceEquip {
