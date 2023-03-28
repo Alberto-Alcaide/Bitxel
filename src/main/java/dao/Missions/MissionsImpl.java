@@ -30,7 +30,7 @@ public class MissionsImpl implements Missions {
 	
 	@Override
 	public String toString() {
-		return "MissionsImpl [RemainingTime=" + RemainingTime + ", name=" + name + ", description=" + description
+		return "StatsImpl [RemainingTime=" + RemainingTime + ", name=" + name + ", description=" + description
 				+ ", reward=" + reward + ", dificulty=" + dificulty + "]";
 	}
 

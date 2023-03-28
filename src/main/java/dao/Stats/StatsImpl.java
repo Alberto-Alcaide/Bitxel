@@ -1,5 +1,7 @@
 package dao.Stats;
 
+import java.util.Objects;
+
 public class StatsImpl implements Stats {
 	
 	private Integer salud;
@@ -11,6 +13,62 @@ public class StatsImpl implements Stats {
 	private Integer suerte;
 	
 	
+	
+	/**
+	 * @param salud
+	 * @param velocidad
+	 * @param experiencia
+	 * @param nivel
+	 * @param ataque
+	 * @param defensa
+	 * @param suerte
+	 */
+	public StatsImpl(Integer salud, Integer velocidad, Integer experiencia, Integer nivel, Integer ataque,
+			Integer defensa, Integer suerte) {
+		super();
+		this.salud = salud;
+		this.velocidad = velocidad;
+		this.experiencia = experiencia;
+		this.nivel = nivel;
+		this.ataque = ataque;
+		this.defensa = defensa;
+		this.suerte = suerte;
+	}
+
+
+
+	@Override
+	public String toString() {
+		return "StatsImpl [salud=" + salud + ", velocidad=" + velocidad + ", experiencia=" + experiencia + ", nivel="
+				+ nivel + ", ataque=" + ataque + ", defensa=" + defensa + ", suerte=" + suerte + "]";
+	}
+	
+	
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(ataque, defensa, experiencia, nivel, salud, suerte, velocidad);
+	}
+
+
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		StatsImpl other = (StatsImpl) obj;
+		return Objects.equals(ataque, other.ataque) && Objects.equals(defensa, other.defensa)
+				&& Objects.equals(experiencia, other.experiencia) && Objects.equals(nivel, other.nivel)
+				&& Objects.equals(salud, other.salud) && Objects.equals(suerte, other.suerte)
+				&& Objects.equals(velocidad, other.velocidad);
+	}
+
+
+
 	@Override
 	public Integer getSalud() {
 		// TODO Auto-generated method stub

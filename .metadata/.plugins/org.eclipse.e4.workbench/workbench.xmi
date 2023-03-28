@@ -8,7 +8,7 @@
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_DewQgMlOEe2oksvjgum89A" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_DewQgclOEe2oksvjgum89A" bindingContexts="_DewQislOEe2oksvjgum89A">
   <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList/>&#xD;&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
-  <children xsi:type="basic:TrimmedWindow" xmi:id="_DewQgclOEe2oksvjgum89A" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_Im1ko8lOEe2oksvjgum89A" label="%trimmedwindow.label.eclipseSDK" x="-8" y="0" width="976" height="1088">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_DewQgclOEe2oksvjgum89A" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_Ie1ko8lOEe2oksvjgum89A" label="%trimmedwindow.label.eclipseSDK" x="-8" y="0" width="976" height="1088">
 >>>>>>> Stashed changes
     <persistedState key="coolBarVisible" value="true"/>
     <persistedState key="perspectiveBarVisible" value="true"/>
@@ -22,8 +22,8 @@
       <children xsi:type="advanced:PerspectiveStack" xmi:id="_wb6Qs8lYEe2SIKzp5RM3nQ" elementId="org.eclipse.ui.ide.perspectivestack" containerData="7500" selectedElement="_wb6QtMlYEe2SIKzp5RM3nQ">
         <children xsi:type="advanced:Perspective" xmi:id="_wb6QtMlYEe2SIKzp5RM3nQ" elementId="org.eclipse.jst.j2ee.J2EEPerspective" selectedElement="_wb6QtclYEe2SIKzp5RM3nQ" label="Java EE" iconURI="platform:/plugin/org.eclipse.jst.j2ee.ui/icons/full/cview16/j2ee_perspective.gif">
 =======
-    <children xsi:type="basic:PartSashContainer" xmi:id="_Im1ko8lOEe2oksvjgum89A" selectedElement="_Im1kpMlOEe2oksvjgum89A" horizontal="true">
-      <children xsi:type="advanced:PerspectiveStack" xmi:id="_Im1kpMlOEe2oksvjgum89A" elementId="org.eclipse.ui.ide.perspectivestack" containerData="7500" selectedElement="_I8Usg8lOEe2oksvjgum89A">
+    <children xsi:type="basic:PartSashContainer" xmi:id="_Ie1ko8lOEe2oksvjgum89A" selectedElement="_Ie1kpMlOEe2oksvjgum89A" horizontal="true">
+      <children xsi:type="advanced:PerspectiveStack" xmi:id="_Ie1kpMlOEe2oksvjgum89A" elementId="org.eclipse.ui.ide.perspectivestack" containerData="7500" selectedElement="_I8Usg8lOEe2oksvjgum89A">
         <children xsi:type="advanced:Perspective" xmi:id="_I8Usg8lOEe2oksvjgum89A" elementId="org.eclipse.jst.j2ee.J2EEPerspective" selectedElement="_I8UshMlOEe2oksvjgum89A" label="Java EE" iconURI="platform:/plugin/org.eclipse.jst.j2ee.ui/icons/full/cview16/j2ee_perspective.gif">
 >>>>>>> Stashed changes
           <persistedState key="persp.hiddenItems" value="persp.hideToolbarSC:print,persp.hideToolbarSC:org.eclipse.ui.edit.undo,persp.hideToolbarSC:org.eclipse.ui.edit.redo,persp.hideToolbarSC:org.eclipse.ui.edit.text.toggleShowSelectedElementOnly,persp.hideToolbarSC:org.eclipse.debug.ui.commands.RunToLine,persp.hideToolbarSC:org.eclipse.jdt.ui.actions.OpenProjectWizard,"/>
@@ -308,16 +308,16 @@
         </children>
         <children xsi:type="advanced:Placeholder" xmi:id="_wb6Q1slYEe2SIKzp5RM3nQ" elementId="org.eclipse.ui.cheatsheets.views.CheatSheetView" toBeRendered="false" ref="_wb8Gi8lYEe2SIKzp5RM3nQ" closeable="true">
 =======
-      <children xsi:type="basic:PartStack" xmi:id="_Im1kpclOEe2oksvjgum89A" elementId="stickyFolderRight" toBeRendered="false" containerData="2500">
-        <children xsi:type="advanced:Placeholder" xmi:id="_Im1kpslOEe2oksvjgum89A" elementId="org.eclipse.help.ui.HelpView" toBeRendered="false" ref="_Im1koMlOEe2oksvjgum89A" closeable="true">
+      <children xsi:type="basic:PartStack" xmi:id="_Ie1kpclOEe2oksvjgum89A" elementId="stickyFolderRight" toBeRendered="false" containerData="2500">
+        <children xsi:type="advanced:Placeholder" xmi:id="_Ie1kpslOEe2oksvjgum89A" elementId="org.eclipse.help.ui.HelpView" toBeRendered="false" ref="_Ie1koMlOEe2oksvjgum89A" closeable="true">
           <tags>View</tags>
           <tags>categoryTag:Help</tags>
         </children>
-        <children xsi:type="advanced:Placeholder" xmi:id="_Im1kp8lOEe2oksvjgum89A" elementId="org.eclipse.ui.internal.introview" toBeRendered="false" ref="_Im1koclOEe2oksvjgum89A" closeable="true">
+        <children xsi:type="advanced:Placeholder" xmi:id="_Ie1kp8lOEe2oksvjgum89A" elementId="org.eclipse.ui.internal.introview" toBeRendered="false" ref="_Ie1koclOEe2oksvjgum89A" closeable="true">
           <tags>View</tags>
           <tags>categoryTag:General</tags>
         </children>
-        <children xsi:type="advanced:Placeholder" xmi:id="_Im1kqMlOEe2oksvjgum89A" elementId="org.eclipse.ui.cheatsheets.views.CheatSheetView" toBeRendered="false" ref="_Im1koslOEe2oksvjgum89A" closeable="true">
+        <children xsi:type="advanced:Placeholder" xmi:id="_Ie1kqMlOEe2oksvjgum89A" elementId="org.eclipse.ui.cheatsheets.views.CheatSheetView" toBeRendered="false" ref="_Ie1koslOEe2oksvjgum89A" closeable="true">
 >>>>>>> Stashed changes
           <tags>View</tags>
           <tags>categoryTag:Help</tags>
@@ -327,7 +327,7 @@
 <<<<<<< Updated upstream
     <sharedElements xsi:type="basic:Part" xmi:id="_wb8Gh8lYEe2SIKzp5RM3nQ" elementId="org.eclipse.help.ui.HelpView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Help" iconURI="platform:/plugin/org.eclipse.help.ui/icons/view16/help_view.png" tooltip="" closeable="true">
 =======
-    <sharedElements xsi:type="basic:Part" xmi:id="_Im1koMlOEe2oksvjgum89A" elementId="org.eclipse.help.ui.HelpView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Help" iconURI="platform:/plugin/org.eclipse.help.ui/icons/view16/help_view.png" tooltip="" closeable="true">
+    <sharedElements xsi:type="basic:Part" xmi:id="_Ie1koMlOEe2oksvjgum89A" elementId="org.eclipse.help.ui.HelpView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Help" iconURI="platform:/plugin/org.eclipse.help.ui/icons/view16/help_view.png" tooltip="" closeable="true">
 >>>>>>> Stashed changes
       <persistedState key="originalCompatibilityViewClass" value="org.eclipse.help.ui.internal.views.HelpView"/>
       <persistedState key="originalCompatibilityViewBundle" value="org.eclipse.help.ui"/>
@@ -337,7 +337,7 @@
 <<<<<<< Updated upstream
     <sharedElements xsi:type="basic:Part" xmi:id="_wb8GiMlYEe2SIKzp5RM3nQ" elementId="org.eclipse.ui.internal.introview" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Welcome" iconURI="platform:/plugin/org.eclipse.ui/icons/full/eview16/defaultview_misc.png" tooltip="" closeable="true">
 =======
-    <sharedElements xsi:type="basic:Part" xmi:id="_Im1koclOEe2oksvjgum89A" elementId="org.eclipse.ui.internal.introview" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Welcome" iconURI="platform:/plugin/org.eclipse.ui/icons/full/eview16/defaultview_misc.png" tooltip="" closeable="true">
+    <sharedElements xsi:type="basic:Part" xmi:id="_Ie1koclOEe2oksvjgum89A" elementId="org.eclipse.ui.internal.introview" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Welcome" iconURI="platform:/plugin/org.eclipse.ui/icons/full/eview16/defaultview_misc.png" tooltip="" closeable="true">
 >>>>>>> Stashed changes
       <persistedState key="originalCompatibilityViewClass" value="org.eclipse.ui.internal.ViewIntroAdapterPart"/>
       <persistedState key="originalCompatibilityViewBundle" value="org.eclipse.ui"/>
@@ -359,7 +359,7 @@
       </menus>
       <toolbar xmi:id="_JQEu4clOEe2oksvjgum89A" elementId="org.eclipse.ui.internal.introview" visible="false"/>
     </sharedElements>
-    <sharedElements xsi:type="basic:Part" xmi:id="_Im1koslOEe2oksvjgum89A" elementId="org.eclipse.ui.cheatsheets.views.CheatSheetView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Cheat Sheets" iconURI="platform:/plugin/org.eclipse.ui.cheatsheets/icons/view16/cheatsheet_view.png" tooltip="" closeable="true">
+    <sharedElements xsi:type="basic:Part" xmi:id="_Ie1koslOEe2oksvjgum89A" elementId="org.eclipse.ui.cheatsheets.views.CheatSheetView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Cheat Sheets" iconURI="platform:/plugin/org.eclipse.ui.cheatsheets/icons/view16/cheatsheet_view.png" tooltip="" closeable="true">
 >>>>>>> Stashed changes
       <persistedState key="originalCompatibilityViewClass" value="org.eclipse.ui.internal.cheatsheets.views.CheatSheetView"/>
       <persistedState key="originalCompatibilityViewBundle" value="org.eclipse.ui.cheatsheets"/>
