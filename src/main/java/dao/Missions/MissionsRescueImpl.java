@@ -1,23 +1,23 @@
-package dao.Misiones;
+package dao.Missions;
 
-public class MisionRescateImpl implements Misiones {
+public class MissionsRescueImpl implements Missions {
 
 
 	
 	@Override
 	public String toString() {
-		return "MisionesImpl [tiempoRestante=" +  getTiempoRestante() + ", name=" + getName() + ", descripcion=" + getDescripcion()
+		return "MisionesImpl [Remaining Time=" +  getRemainingTime() + ", name=" + getName() + ", description=" + getDescription()
 				+ "]";
 	}
 	
 	@Override
-	public Integer getTiempoRestante() {
+	public Integer getRemainingTime() {
 		// TODO Auto-generated method stub
 		return 1000;
 	}
 	
 	@Override
-	public void setTiempoRestante(Integer name) {
+	public void setRemainingTime(Integer time) {
 		// TODO Auto-generated method stub
 		
 	}
@@ -35,15 +35,16 @@ public class MisionRescateImpl implements Misiones {
 	}
 	
 	@Override
-	public String getDescripcion() {
+	public String getDescription() {
 		// TODO Auto-generated method stub
 		return "Rescata a la princesa antes de que se acabe el tiempo o morira entre terribles sufrimientos";
 	}
 	
 	@Override
-	public void setDescripcion(String Descripcion) {
+	public void setDescription(String description) {
 		// TODO Auto-generated method stub
 		
 	}
+	
 	
 }
