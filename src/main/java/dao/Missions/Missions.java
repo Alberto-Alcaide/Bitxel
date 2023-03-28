@@ -18,5 +18,5 @@ public interface Missions {
 	//Esto serán implementaciones de equipamiento o oro
 	public enum Reward{ gold, sword, boots, armour, amulet;}
 	
-	public enum Dificultad{ easy, normal, hard;}
+	public enum Dificulty{ easy, normal, hard;}
 }
