@@ -14,84 +14,84 @@ public class StatsImpl implements Stats {
 	@Override
 	public Integer getSalud() {
 		// TODO Auto-generated method stub
-		return null;
+		return salud;
 	}
 
 	@Override
 	public void setSalud(Integer salud) {
-		// TODO Auto-generated method stub
+		this.salud=salud;
 
 	}
 
 	@Override
 	public Integer getVelocidad() {
 		// TODO Auto-generated method stub
-		return null;
+		return velocidad;
 	}
 
 	@Override
 	public void setVelocidad(Integer velocidad) {
-		// TODO Auto-generated method stub
+		this.velocidad = velocidad;
 
 	}
 
 	@Override
 	public Integer getExperiencia() {
 		// TODO Auto-generated method stub
-		return null;
+		return experiencia;
 	}
 
 	@Override
 	public void setExperiencia(Integer experiencia) {
-		// TODO Auto-generated method stub
+		this.experiencia = experiencia;
 
 	}
 
 	@Override
 	public Integer getNivel() {
 		// TODO Auto-generated method stub
-		return null;
+		return nivel;
 	}
 
 	@Override
 	public void setNivel(Integer nivel) {
-		// TODO Auto-generated method stub
+		this.nivel = nivel;
 
 	}
 
 	@Override
 	public Integer getAtaque() {
 		// TODO Auto-generated method stub
-		return null;
+		return ataque;
 	}
 
 	@Override
-	public void setAtaque(Integer Ataque) {
-		// TODO Auto-generated method stub
+	public void setAtaque(Integer ataque) {
+		this.ataque = ataque;
 
 	}
 
 	@Override
 	public Integer getDefensa() {
 		// TODO Auto-generated method stub
-		return null;
+		return defensa;
 	}
 
 	@Override
-	public void setDefensa(Integer Defensa) {
-		// TODO Auto-generated method stub
+	public void setDefensa(Integer defensa) {
+		this.defensa = defensa;
 
 	}
 
 	@Override
 	public Integer getSuerte() {
 		// TODO Auto-generated method stub
-		return null;
+		return suerte;
 	}
 
 	@Override
-	public void setSuerte(Integer Suerte) {
-		// TODO Auto-generated method stub
+	public void setSuerte(Integer suerte) {
+		this.suerte = suerte;
 
 	}
 

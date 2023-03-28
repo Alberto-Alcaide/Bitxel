@@ -20,13 +20,13 @@ public interface Stats {
 	
 	Integer getAtaque();
 	
-	void setAtaque(Integer Ataque);
+	void setAtaque(Integer ataque);
 	
 	Integer getDefensa();
 	
-	void setDefensa(Integer Defensa);
+	void setDefensa(Integer defensa);
 	
 	Integer getSuerte();
 	
-	void setSuerte(Integer Suerte);
+	void setSuerte(Integer suerte);
 }
