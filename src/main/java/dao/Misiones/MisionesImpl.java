@@ -1,5 +1,7 @@
 package dao.Misiones;
 
+import java.util.Objects;
+
 public class MisionesImpl implements Misiones {
 
 	Integer tiempoRestante;
@@ -25,6 +27,27 @@ public class MisionesImpl implements Misiones {
 	public String toString() {
 		return "MisionesImpl [tiempoRestante=" + tiempoRestante + ", name=" + name + ", descripcion=" + descripcion
 				+ "]";
+	}
+
+	
+	
+	
+	@Override
+	public int hashCode() {
+		return Objects.hash(descripcion, name, tiempoRestante);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		MisionesImpl other = (MisionesImpl) obj;
+		return Objects.equals(descripcion, other.descripcion) && Objects.equals(name, other.name)
+				&& Objects.equals(tiempoRestante, other.tiempoRestante);
 	}
 
 	@Override
@@ -62,5 +85,7 @@ public class MisionesImpl implements Misiones {
 		// TODO Auto-generated method stub
 
 	}
+	
+	
 
 }
