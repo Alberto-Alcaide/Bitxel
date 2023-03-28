@@ -3,9 +3,8 @@ package dao.Equip;
 public class Equip implements InterfaceEquip {
 
 	private String description;
-	private Integer price;
+	private Integer currency;
 	
-	private enum Rewards{};
 	private enum rare{};
 
 	public String getDescription() {
@@ -16,11 +15,13 @@ public class Equip implements InterfaceEquip {
 		this.description = description;
 	}
 
-	public Integer getPrice() {
-		return price;
+	public Integer getCurrency() {
+		return currency;
 	}
 
-	public void setPrice(Integer price) {
-		this.price = price;
+	public void setCurrency(Integer currency) {
+		this.currency = currency;
 	}
+
+
 }
