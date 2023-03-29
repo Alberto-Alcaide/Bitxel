@@ -1,84 +1,76 @@
 package dao.Missions;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.fail;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-class TestMissions {
+import dao.Missions.Missions.Dificulty;
+import dao.Missions.Missions.Reward;
 
+class TestMissions {
+	
+	Missions m1 = new MissionsImpl(600,"Ir al parque a dar un paseo","",Reward.gold,Dificulty.easy);
+	
 	@BeforeEach
 	void setUp() throws Exception {
-	}
-
-	@Test
-	void testHashCode() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	void testMissionsImpl() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	void testToString() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	void testEqualsObject() {
-		fail("Not yet implemented");
+		Missions m1 = new MissionsImpl(600,"Ir al parque a dar un paseo","",Reward.gold,Dificulty.easy);
 	}
 
 	@Test
 	void testGetRemainingTime() {
-		fail("Not yet implemented");
+		assertTrue(m1.getRemainingTime() == 600,"Test Correcto");
 	}
 
 	@Test
 	void testSetRemainingTime() {
-		fail("Not yet implemented");
+		m1.setRemainingTime(10);
+		assertTrue(m1.getRemainingTime() == 10,"Test Correcto");
 	}
 
 	@Test
 	void testGetName() {
-		fail("Not yet implemented");
+		assertTrue(m1.getName() == "Ir al parque a dar un paseo","Test Correcto");
 	}
 
 	@Test
 	void testSetName() {
-		fail("Not yet implemented");
+		m1.setName("comer patatas");
+		assertTrue(m1.getName() == "comer patatas","Test Correcto");
 	}
 
 	@Test
 	void testGetDescription() {
-		fail("Not yet implemented");
+		assertTrue(m1.getDescription() == "","Test Correcto");
 	}
 
 	@Test
 	void testSetDescription() {
-		fail("Not yet implemented");
+		m1.setDescription("Patata");
+		assertTrue(m1.getDescription() == "Patata","Test Correcto");
 	}
 
 	@Test
 	void testGetReward() {
-		fail("Not yet implemented");
+		assertTrue(m1.getReward()== Reward.gold,"Test Correcto");
 	}
 
 	@Test
 	void testSetReward() {
-		fail("Not yet implemented");
+		m1.setReward(Reward.amulet);
+		assertTrue(m1.getReward()== Reward.amulet,"Test Correcto");
 	}
 
 	@Test
 	void testGetDificulty() {
-		fail("Not yet implemented");
+		assertTrue(m1.getDificulty()== Dificulty.easy,"Test Correcto");
 	}
 
 	@Test
 	void testSetDificulty() {
-		fail("Not yet implemented");
+		m1.setDificulty(Dificulty.hard);
+		assertTrue(m1.getDificulty()== Dificulty.hard,"Test Correcto");
 	}
 
 }

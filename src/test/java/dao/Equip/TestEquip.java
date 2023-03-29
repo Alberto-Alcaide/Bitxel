@@ -1,10 +1,8 @@
 package dao.Equip;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.fail;
 
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -12,61 +10,54 @@ import dao.Equip.Equip.Rank;
 
 class TestEquip {
 
-
+	Equip e = new EquipImpl("Great Sword","A really BIG F. Sword", 100, Rank.rare);
+	
 	@BeforeEach
 	void setUp() throws Exception {
 		Equip e = new EquipImpl("Great Sword","A really BIG F. Sword", 100, Rank.rare);
 	}
 
-
-	@Test
-	void testEquipImpl() {
-		fail("Not yet implemented");
-	}
-
 	@Test
 	void testGetName() {
-		fail("Not yet implemented");
+		assertTrue(e.getName() == "Great Sword","Test Correcto");
 	}
 
 	@Test
 	void testSetName() {
-		fail("Not yet implemented");
+		e.setName("Patata");
+		assertTrue(e.getName() == "Patata","Test Correcto");
 	}
 
 	@Test
 	void testGetDescription() {
-		fail("Not yet implemented");
+		assertTrue(e.getDescription() == "A really BIG F. Sword","Test Correcto");
 	}
 
 	@Test
 	void testSetDescription() {
-		fail("Not yet implemented");
+		e.setDescription("Patata");
+		assertTrue(e.getDescription() == "Patata","Test Correcto");
 	}
 
 	@Test
 	void testGetCurrency() {
-		fail("Not yet implemented");
+		assertTrue(e.getCurrency() == 100,"Test Correcto");
 	}
 
 	@Test
 	void testSetCurrency() {
-		fail("Not yet implemented");
+		e.setCurrency(0);
+		assertTrue(e.getCurrency() == 0,"Test Correcto");
 	}
 
 	@Test
 	void testGetRank() {
-		fail("Not yet implemented");
+		assertTrue(e.getRank() == Rank.rare,"Test Correcto");
 	}
 
 	@Test
 	void testSetRank() {
-		fail("Not yet implemented");
+		e.setRank(Rank.legendary);
+		assertTrue(e.getRank() == Rank.legendary,"Test Correcto");
 	}
-
-	@Test
-	void testToString() {
-		fail("Not yet implemented");
-	}
-
 }
