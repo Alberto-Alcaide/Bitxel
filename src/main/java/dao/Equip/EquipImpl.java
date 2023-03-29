@@ -80,6 +80,24 @@ public class EquipImpl implements Equip {
 				+ "]";
 	}
 
+	@Override
+	public int hashCode() {
+		return Objects.hash(currency, description, name, rank);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		EquipImpl other = (EquipImpl) obj;
+		return Objects.equals(currency, other.currency) && Objects.equals(description, other.description)
+				&& Objects.equals(name, other.name) && rank == other.rank;
+	}
+
 
 
 
