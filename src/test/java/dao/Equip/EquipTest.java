@@ -6,7 +6,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import dao.Equip.*;
 import dao.Equip.Equip.Rank;
 
 
@@ -18,11 +17,9 @@ public class EquipTest {
 		 EquipImpl equip1 = new EquipImpl("Great Sword","A really BIG F. Sword", 100, Rank.rare);
 		 EquipImpl equip2 = new EquipImpl("Dagger","Sneacky sneacky...", 70, Rank.rare);
 		 EquipImpl equip3 = new EquipImpl("Holy Sword","Blessed by God himself (I am God)", 200, Rank.epic);
-		 EquipSwordImpl equip4 = new EquipSwordImpl();
 		 
 		 List<Equip> equip = new ArrayList<>();
 		 
-		 equip.add(equip4);
 		 equip.add(equip3);
 		 equip.add(equip2);
 		 equip.add(equip1);
