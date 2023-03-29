@@ -1,5 +1,7 @@
 package dao.Equip;
 
+import java.util.Objects;
+
 public class EquipImpl implements Equip {
 
 	private String name;
@@ -16,6 +18,30 @@ public class EquipImpl implements Equip {
 		this.rank = rank;
 	}
 	
+	
+	
+	@Override
+	public int hashCode() {
+		return Objects.hash(currency, description, name, rank);
+	}
+
+
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		EquipImpl other = (EquipImpl) obj;
+		return Objects.equals(currency, other.currency) && Objects.equals(description, other.description)
+				&& Objects.equals(name, other.name) && rank == other.rank;
+	}
+
+
+
 	public String getName() {
 		return name;
 	}

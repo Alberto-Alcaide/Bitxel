@@ -1,5 +1,7 @@
 package dao.Missions;
 
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -10,6 +12,15 @@ import dao.Missions.Missions.Reward;
 public class MissionsTest {
 
 	public static void main(String[] args) {
+		
+		Integer a = 2;
+		Integer b = 4;
+		Integer resultado = 2 + 4;
+		assertTrue(resultado == 6,"La suma no ha sido correcta");
+		
+		
+		
+		
 		// TODO Auto-generated method stub
 		MissionsImpl e1 = new MissionsImpl(600,"Mata al señor Oscuro","",Reward.gold,Dificulty.hard);
 		MissionsImpl m2 = new MissionsImpl(600,"Adentrate en la mazmorra","",Reward.boots,Dificulty.normal);
