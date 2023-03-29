@@ -16,25 +16,25 @@ public class ConsultaStats {
 		statsList.add( new StatsImpl(100, 50, 0, 1, 10, 5, 20));
 
 		StatsImpl objeto2 = new StatsImpl(80, 70, 250, 3, 15, 8, 15);
-		listaStats.add(objeto2);
+		statsList.add(objeto2);
 
 		StatsImpl objeto3 = new StatsImpl(120, 40, 500, 5, 20, 10, 25);
-		listaStats.add(objeto3);
+		statsList.add(objeto3);
 
 		StatsImpl objeto4 = new StatsImpl(90, 60, 150, 2, 12, 6, 18);       
 		
-		return StatsList;
+		return statsList;
 	}
 	
 	public List<Stats> fitraStatsNivel(Rank rango){
-		List<Stats> equipList = CreacionListadoEquip();
+		List<Stats> statsList = CreacionListadoEquip();
 		
 		List<Stats> seleccionados = new ArrayList<>();
-		for (Equip i : StatsList) {
+		for (Equip i : statsList) {
 			if(i.getRank() == rango) {				
 				seleccionados.add(i);
 			}
 		}
-		return equipList;
+		return statsList;
 	}
 }

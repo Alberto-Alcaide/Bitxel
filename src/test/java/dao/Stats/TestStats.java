@@ -12,16 +12,6 @@ class TestStats {
 	}
 
 	@Test
-	void testHashCode() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	void testStatsImpl() {
-		fail("Not yet implemented");
-	}
-
-	@Test
 	void testToString() {
 		fail("Not yet implemented");
 	}
