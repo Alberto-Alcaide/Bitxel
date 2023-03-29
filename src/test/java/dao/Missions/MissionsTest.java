@@ -6,6 +6,8 @@ import java.util.List;
 import dao.Missions.Missions.Dificulty;
 import dao.Missions.Missions.Reward;
 
+
+
 public class MissionsTest {
 
 	public static void main(String[] args) {
@@ -42,7 +44,7 @@ public class MissionsTest {
 		System.out.println(m1.hashCode());
 		
 		System.out.println("EQUALS:");
-		System.out.println("M1 = M2: " + m1.equals(m2));
+		System.out.println("m1 = M2: " + m1.equals(m2));
 		
 		
 		System.out.println("LISTA, ordenada por nombre:");
