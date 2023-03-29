@@ -3,7 +3,7 @@ package dao.Equip;
 import java.util.Comparator;
 
 
-public class ComparatorEquip implements Comparator<Equip> {
+public class EquipComparator implements Comparator<Equip> {
 	
 	@Override
 	public int compare(Equip e1, Equip e2) {

@@ -7,6 +7,8 @@ import java.util.List;
 import dao.Missions.Missions.Dificulty;
 import dao.Missions.Missions.Reward;
 
+
+
 public class MissionsTest {
 
 	public static void main(String[] args) {
@@ -43,8 +45,12 @@ public class MissionsTest {
 		System.out.println(e1.hashCode());
 		
 		System.out.println("EQUALS:");
+<<<<<<< HEAD
 		e1 = m2;
 		System.out.println("e1 = M2: " + e1.equals(m2));
+=======
+		System.out.println("m1 = M2: " + m1.equals(m2));
+>>>>>>> AlbertoA
 		
 		
 		System.out.println("LISTA, ordenada por nombre:");
