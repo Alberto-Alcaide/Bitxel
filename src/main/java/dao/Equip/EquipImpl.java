@@ -7,6 +7,7 @@ public class EquipImpl implements Equip {
 	private String name;
 	private String description;
 	private Integer currency;
+	  
 	
 	private Rank rank;
 	
@@ -71,35 +72,7 @@ public class EquipImpl implements Equip {
 	}
 
 	public void setRank(Rank rank) {
-		this.rank = rank;
+		this.rank = rank;	
 	}
-
-	@Override
-	public String toString() {
-		return "EquipImpl [name=" + name + ", description=" + description + ", currency=" + currency + ", rank=" + rank
-				+ "]";
-	}
-
-	@Override
-	public int hashCode() {
-		return Objects.hash(currency, description, name, rank);
-	}
-
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		EquipImpl other = (EquipImpl) obj;
-		return Objects.equals(currency, other.currency) && Objects.equals(description, other.description)
-				&& Objects.equals(name, other.name) && rank == other.rank;
-	}
-
-
-
-
 
 }

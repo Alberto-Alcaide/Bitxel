@@ -2,6 +2,8 @@ package dao.Stats;
 
 import java.util.Objects;
 
+import dao.Equip.Equip.Rank;
+
 public class StatsImpl implements Stats {
 	
 	private Integer salud;
@@ -151,6 +153,14 @@ public class StatsImpl implements Stats {
 	public void setSuerte(Integer suerte) {
 		this.suerte = suerte;
 
+	}
+
+
+
+	@Override
+	public Rank getRank() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

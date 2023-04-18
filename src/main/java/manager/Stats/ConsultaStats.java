@@ -30,7 +30,7 @@ public class ConsultaStats {
 		List<Stats> statsList = CreacionListadoEquip();
 		
 		List<Stats> seleccionados = new ArrayList<>();
-		for (Equip i : statsList) {
+		for (Stats i : statsList) {
 			if(i.getRank() == rango) {				
 				seleccionados.add(i);
 			}

@@ -1,5 +1,7 @@
 package dao.Stats;
 
+import dao.Equip.Equip.Rank;
+
 public interface Stats {
 	
 	Integer getSalud();
@@ -29,4 +31,6 @@ public interface Stats {
 	Integer getSuerte();
 	
 	void setSuerte(Integer suerte);
+
+	Rank getRank();
 }
