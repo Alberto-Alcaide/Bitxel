@@ -26,6 +26,7 @@ public class ConsultaMissions {
 		
 		return missions;
 	}
+	
 	public List<Missions> filtraMissionsDificulty(Dificulty dificulty)
 	{
 		List<Missions> missions = CreacionListadoMissions();

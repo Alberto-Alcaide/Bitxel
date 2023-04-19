@@ -71,7 +71,4 @@ public class Tarea {
 	private void setVibracion(Boolean vibracion) {
 		this.vibracion = vibracion;
 	}
-	
-	
-	
 }

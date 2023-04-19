@@ -21,6 +21,15 @@ public class EquipImpl implements Equip {
 	
 	
 	
+	
+	
+	@Override
+	public String toString() {
+		return "EquipImpl [name=" + name + ", description=" + description + ", currency=" + currency + ", rank=" + rank
+				+ "]";
+	}
+
+
 	@Override
 	public int hashCode() {
 		return Objects.hash(currency, description, name, rank);

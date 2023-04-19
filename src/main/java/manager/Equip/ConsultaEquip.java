@@ -10,7 +10,7 @@ import dao.Equip.EquipImpl;
 public class ConsultaEquip {
 
 	
-	public List<Equip> CreacionListadoEquip(){
+	public static List<Equip> CreacionListadoEquip(){
 		List<Equip> equipList = new ArrayList<>();
         
 		equipList.add(new EquipImpl("Sword", "A basic sword", 100, Rank.common));
