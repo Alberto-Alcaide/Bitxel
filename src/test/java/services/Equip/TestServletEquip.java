@@ -17,8 +17,7 @@ public class TestServletEquip {
 	public void testServlets() throws IOException, ServletException{
 		HttpServletRequest request = mock(HttpServletRequest.class);
 		HttpServletResponse response = mock(HttpServletResponse.class);
-		
-		HttpServletResponse response2 = mock(HttpServletResponse.class);
+	
 		
 		when(request.getParameter("name")).thenReturn("280");
 		StringWriter stringWriter = new StringWriter();
