@@ -7,12 +7,12 @@
 <display-name>Servicios Web PDM</display-name>
   <servlet>
     <description></description>
-    <display-name>GetAlumnosServlet</display-name>
-    <servlet-name>GetAlumnosServlet</servlet-name>
-    <servlet-class>es.loyola.iinftv.pdm.services.GetAlumnosServlet</servlet-class>
+    <display-name>GetEquipServlet</display-name>
+    <servlet-name>GetEquipServlet</servlet-name>
+    <servlet-class>services.Equip.GetEquipServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>GetAlumnosServlet</servlet-name>
-    <url-pattern>/GetAlumnosServlet</url-pattern>
+    <servlet-name>GetEquipServlet</servlet-name>
+    <url-pattern>/GetEquipServlet</url-pattern>
   </servlet-mapping>
 </web-app>
