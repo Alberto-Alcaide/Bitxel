@@ -10,7 +10,7 @@ import dao.Stats.StatsImpl;
 
 public class ConsultaStats {
 	
-	public List<Stats> CreacionListadoEquip(){
+	public List<Stats> CreacionListadoStats(){
 		List<Stats> statsList = new ArrayList<>();
         
 		statsList.add( new StatsImpl(100, 50, 0, 1, 10, 5, 20));
@@ -21,13 +21,14 @@ public class ConsultaStats {
 		StatsImpl objeto3 = new StatsImpl(120, 40, 500, 5, 20, 10, 25);
 		statsList.add(objeto3);
 
-		StatsImpl objeto4 = new StatsImpl(90, 60, 150, 2, 12, 6, 18);       
+		StatsImpl objeto4 = new StatsImpl(90, 60, 150, 2, 12, 6, 18);   
+		statsList.add(objeto4);
 		
 		return statsList;
 	}
 	
 	public List<Stats> fitraStatsNivel(Rank rango){
-		List<Stats> statsList = CreacionListadoEquip();
+		List<Stats> statsList = CreacionListadoStats();
 		
 		List<Stats> seleccionados = new ArrayList<>();
 		for (Stats i : statsList) {

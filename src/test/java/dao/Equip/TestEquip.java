@@ -10,11 +10,11 @@ import dao.Equip.Equip.Rank;
 
 class TestEquip {
 
-	Equip e = new EquipImpl("Great Sword","A really BIG F. Sword", 100, Rank.rare);
+	Equip e;
 	
 	@BeforeEach
 	void setUp() throws Exception {
-		Equip e = new EquipImpl("Great Sword","A really BIG F. Sword", 100, Rank.rare);
+		e = new EquipImpl("Great Sword","Something new", 100, Rank.rare);
 	}
 
 	@Test
@@ -30,7 +30,7 @@ class TestEquip {
 
 	@Test
 	void testGetDescription() {
-		assertTrue(e.getDescription() == "A really BIG F. Sword","Test Correcto");
+		assertTrue(e.getDescription() == "Something new","Test Correcto");
 	}
 
 	@Test

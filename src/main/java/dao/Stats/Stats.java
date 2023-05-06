@@ -4,33 +4,33 @@ import dao.Equip.Equip.Rank;
 
 public interface Stats {
 	
-	Integer getSalud();
+	Integer getHealth();
 	
-	void setSalud(Integer salud);
+	void setHealth(Integer health);
 	
-	Integer getVelocidad();
+	Integer getSpeed();
 	
-	void setVelocidad(Integer velocidad);
+	void setSpeed(Integer speed);
 	
-	Integer getExperiencia();
+	Integer getExp();
 	
-	void setExperiencia(Integer experiencia);
+	void setExp(Integer exp);
 	
-	Integer getNivel();
+	Integer getLevel();
 	
-	void setNivel(Integer nivel);
+	void setLevel(Integer level);
 	
-	Integer getAtaque();
+	Integer getAttack();
 	
-	void setAtaque(Integer ataque);
+	void setAttack(Integer attack);
 	
-	Integer getDefensa();
+	Integer getDefense();
 	
-	void setDefensa(Integer defensa);
+	void setDefense(Integer defense);
 	
-	Integer getSuerte();
+	Integer getLuck();
 	
-	void setSuerte(Integer suerte);
+	void setLuck(Integer luck);
 
 	Rank getRank();
 }
