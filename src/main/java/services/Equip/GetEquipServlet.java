@@ -26,8 +26,8 @@ public class GetEquipServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) 
 			throws ServletException, IOException {
 		
-		resp.setContentType("application/json");
-		resp.setCharacterEncoding("utf-8");
+		//resp.setContentType("application/json");
+		//resp.setCharacterEncoding("utf-8");
 		
 		resp.setContentType("text/plain");
 		PrintWriter writer = resp.getWriter();
@@ -37,7 +37,7 @@ public class GetEquipServlet extends HttpServlet {
 		writer.append("Hola");
 		
 		for (Equip i : listaEquipamiento) {
-			resp.getWriter().append(i.toString());
+			writer.append(i.toString()+"\n");
 		}
 	}
 }

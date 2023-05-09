@@ -1,10 +1,12 @@
-package dao.Missions;
+package manager.Missions;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import dao.Missions.Missions;
 import dao.Missions.Missions.Dificulty;
 import dao.Missions.Missions.Reward;
+import dao.Missions.MissionsImpl;
 
 public class ConsultaMissions {
 	

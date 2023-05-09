@@ -11,11 +11,11 @@ import dao.Missions.Missions.Reward;
 
 class TestMissions {
 	
-	Missions m1 = new MissionsImpl(600,"Ir al parque a dar un paseo","",Reward.gold,Dificulty.easy);
+	Missions m1;
 	
 	@BeforeEach
 	void setUp() throws Exception {
-		Missions m1 = new MissionsImpl(600,"Ir al parque a dar un paseo","",Reward.gold,Dificulty.easy);
+		m1 = new MissionsImpl(600,"Ir al parque a dar un paseo","",Reward.gold,Dificulty.easy);
 	}
 
 	@Test

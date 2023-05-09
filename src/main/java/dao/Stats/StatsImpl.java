@@ -6,52 +6,99 @@ import dao.Equip.Equip.Rank;
 
 public class StatsImpl implements Stats {
 	
-	private Integer salud;
-	private Integer velocidad;
-	private Integer experiencia;
-	private Integer nivel;
-	private Integer ataque;
-	private Integer defensa;
-	private Integer suerte;
+	private Integer health;
+	private Integer speed;
+	private Integer exp;
+	private Integer level;
+	private Integer attack;
+	private Integer defense;
+	private Integer luck;
 	
 	
-	
-	/**
-	 * @param salud
-	 * @param velocidad
-	 * @param experiencia
-	 * @param nivel
-	 * @param ataque
-	 * @param defensa
-	 * @param suerte
-	 */
-	public StatsImpl(Integer salud, Integer velocidad, Integer experiencia, Integer nivel, Integer ataque,
-			Integer defensa, Integer suerte) {
+	public StatsImpl(Integer health, Integer speed, Integer exp, Integer level, Integer attack, Integer defense,
+			Integer luck) {
 		super();
-		this.salud = salud;
-		this.velocidad = velocidad;
-		this.experiencia = experiencia;
-		this.nivel = nivel;
-		this.ataque = ataque;
-		this.defensa = defensa;
-		this.suerte = suerte;
+		this.health = health;
+		this.speed = speed;
+		this.exp = exp;
+		this.level = level;
+		this.attack = attack;
+		this.defense = defense;
+		this.luck = luck;
 	}
 
-
+	
 
 	@Override
-	public String toString() {
-		return "StatsImpl [salud=" + salud + ", velocidad=" + velocidad + ", experiencia=" + experiencia + ", nivel="
-				+ nivel + ", ataque=" + ataque + ", defensa=" + defensa + ", suerte=" + suerte + "]";
+	public Rank getRank() {
+		// TODO Auto-generated method stub
+		return null;
 	}
-	
-	
+
+	public Integer getHealth() {
+		return health;
+	}
+
+
+	public void setHealth(Integer health) {
+		this.health = health;
+	}
+
+	public Integer getSpeed() {
+		return speed;
+	}
+
+	public void setSpeed(Integer speed) {
+		this.speed = speed;
+	}
+
+	public Integer getExp() {
+		return exp;
+	}
+
+
+	public void setExp(Integer exp) {
+		this.exp = exp;
+	}
+
+	public Integer getLevel() {
+		return level;
+	}
+
+	public void setLevel(Integer level) {
+		this.level = level;
+	}
+
+	public Integer getAttack() {
+		return attack;
+	}
+
+	public void setAttack(Integer attack) {
+		this.attack = attack;
+	}
+
+	public Integer getDefense() {
+		return defense;
+	}
+
+	public void setDefense(Integer defense) {
+		this.defense = defense;
+	}
+
+	public Integer getLuck() {
+		return luck;
+	}
+
+	public void setLuck(Integer luck) {
+		this.luck = luck;
+	}
+
+
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(ataque, defensa, experiencia, nivel, salud, suerte, velocidad);
+		return Objects.hash(attack, defense, exp, health, level, luck, speed);
 	}
-
 
 
 	@Override
@@ -63,104 +110,9 @@ public class StatsImpl implements Stats {
 		if (getClass() != obj.getClass())
 			return false;
 		StatsImpl other = (StatsImpl) obj;
-		return Objects.equals(ataque, other.ataque) && Objects.equals(defensa, other.defensa)
-				&& Objects.equals(experiencia, other.experiencia) && Objects.equals(nivel, other.nivel)
-				&& Objects.equals(salud, other.salud) && Objects.equals(suerte, other.suerte)
-				&& Objects.equals(velocidad, other.velocidad);
+		return Objects.equals(attack, other.attack) && Objects.equals(defense, other.defense)
+				&& Objects.equals(exp, other.exp) && Objects.equals(health, other.health)
+				&& Objects.equals(level, other.level) && Objects.equals(luck, other.luck)
+				&& Objects.equals(speed, other.speed);
 	}
-
-
-
-	@Override
-	public Integer getSalud() {
-		// TODO Auto-generated method stub
-		return salud;
-	}
-
-	@Override
-	public void setSalud(Integer salud) {
-		this.salud=salud;
-
-	}
-
-	@Override
-	public Integer getVelocidad() {
-		// TODO Auto-generated method stub
-		return velocidad;
-	}
-
-	@Override
-	public void setVelocidad(Integer velocidad) {
-		this.velocidad = velocidad;
-
-	}
-
-	@Override
-	public Integer getExperiencia() {
-		// TODO Auto-generated method stub
-		return experiencia;
-	}
-
-	@Override
-	public void setExperiencia(Integer experiencia) {
-		this.experiencia = experiencia;
-
-	}
-
-	@Override
-	public Integer getNivel() {
-		// TODO Auto-generated method stub
-		return nivel;
-	}
-
-	@Override
-	public void setNivel(Integer nivel) {
-		this.nivel = nivel;
-
-	}
-
-	@Override
-	public Integer getAtaque() {
-		// TODO Auto-generated method stub
-		return ataque;
-	}
-
-	@Override
-	public void setAtaque(Integer ataque) {
-		this.ataque = ataque;
-
-	}
-
-	@Override
-	public Integer getDefensa() {
-		// TODO Auto-generated method stub
-		return defensa;
-	}
-
-	@Override
-	public void setDefensa(Integer defensa) {
-		this.defensa = defensa;
-
-	}
-
-	@Override
-	public Integer getSuerte() {
-		// TODO Auto-generated method stub
-		return suerte;
-	}
-
-	@Override
-	public void setSuerte(Integer suerte) {
-		this.suerte = suerte;
-
-	}
-
-
-
-	@Override
-	public Rank getRank() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
 }

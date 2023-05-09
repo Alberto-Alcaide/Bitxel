@@ -5,6 +5,6 @@
 <title>Hola</title>
 </head>
 <body>
-Prueba Proyecto FiiXel
+Prueba Proyecto BitXel
 </body>
 </html>

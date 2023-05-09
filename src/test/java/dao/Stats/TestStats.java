@@ -7,88 +7,88 @@ import org.junit.jupiter.api.Test;
 
 class TestStats {
 
+	Stats s1;
+	
 	@BeforeEach
 	void setUp() throws Exception {
+		s1 = new StatsImpl(100, 50, 0, 1, 10, 5, 20);
 	}
 
 	@Test
-	void testToString() {
-		fail("Not yet implemented");
+	void testGetHealth() {
+		assertTrue(s1.getHealth() == 100,"Test Correcto");
 	}
 
 	@Test
-	void testEqualsObject() {
-		fail("Not yet implemented");
+	void testSetHealth() {
+		s1.setHealth(150);
+		assertTrue(s1.getHealth() == 150,"Test Correcto");
 	}
 
 	@Test
-	void testGetSalud() {
-		fail("Not yet implemented");
+	void testGetSpeed() {
+		assertTrue(s1.getSpeed() == 50,"Test Correcto");
 	}
 
 	@Test
-	void testSetSalud() {
-		fail("Not yet implemented");
+	void testSetSpeed() {
+		s1.setSpeed(70);
+		assertTrue(s1.getSpeed() == 70,"Test Correcto");
 	}
 
 	@Test
-	void testGetVelocidad() {
-		fail("Not yet implemented");
+	void testGetExp() {
+		assertTrue(s1.getExp() == 0,"Test Correcto");
 	}
 
 	@Test
-	void testSetVelocidad() {
-		fail("Not yet implemented");
+	void testSetExp() {
+		s1.setExp(10);
+		assertTrue(s1.getExp() == 10,"Test Correcto");
 	}
 
 	@Test
-	void testGetExperiencia() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	void testSetExperiencia() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	void testGetNivel() {
-		fail("Not yet implemented");
+	void testGetLevel() {
+		assertTrue(s1.getLevel() == 1,"Test Correcto");
 	}
 
 	@Test
 	void testSetNivel() {
-		fail("Not yet implemented");
+		s1.setLevel(2);
+		assertTrue(s1.getLevel() == 2,"Test Correcto");
 	}
 
 	@Test
-	void testGetAtaque() {
-		fail("Not yet implemented");
+	void testGetAttack() {
+		assertTrue(s1.getAttack() == 10,"Test Correcto");
 	}
 
 	@Test
 	void testSetAtaque() {
-		fail("Not yet implemented");
+		s1.setAttack(25);
+		assertTrue(s1.getAttack() == 25,"Test Correcto");
 	}
 
 	@Test
-	void testGetDefensa() {
-		fail("Not yet implemented");
+	void testGetDefense() {
+		assertTrue(s1.getDefense() == 5,"Test Correcto");
 	}
 
 	@Test
-	void testSetDefensa() {
-		fail("Not yet implemented");
+	void testSetDefense() {
+		s1.setDefense(10);
+		assertTrue(s1.getDefense() == 10,"Test Correcto");
 	}
 
 	@Test
-	void testGetSuerte() {
-		fail("Not yet implemented");
+	void testGetLuck() {
+		assertTrue(s1.getLuck() == 20,"Test Correcto");
 	}
 
 	@Test
-	void testSetSuerte() {
-		fail("Not yet implemented");
+	void testSetLuck() {
+		s1.setLuck(35);
+		assertTrue(s1.getLuck() == 35,"Test Correcto");
 	}
 
 }

@@ -13,10 +13,10 @@ public class ConsultaEquip {
 	public static List<Equip> CreacionListadoEquip(){
 		List<Equip> equipList = new ArrayList<>();
         
-		equipList.add(new EquipImpl("Sword", "A basic sword", 100, Rank.common));
-		equipList.add(new EquipImpl("Bow", "A basic bow", 120, Rank.common));
-		equipList.add(new EquipImpl("Axe", "A basic axe", 90, Rank.common));
-		equipList.add(new EquipImpl("Wand", "A basic wand", 110, Rank.common));
+		equipList.add(new EquipImpl("Axe", "A basic sword", 100, Rank.common));
+		equipList.add(new EquipImpl("Axe", "A basic bow", 100, Rank.common));
+		equipList.add(new EquipImpl("Axe", "A basic axe", 100, Rank.common));
+		equipList.add(new EquipImpl("Wand", "A basic wand", 100, Rank.common));
 		equipList.add(new EquipImpl("Dagger", "A basic dagger", 80, Rank.common));
 		equipList.add(new EquipImpl("Shield", "A basic shield", 150, Rank.common));
 		equipList.add(new EquipImpl("Greatsword", "A powerful greatsword", 500, Rank.rare));
@@ -27,7 +27,7 @@ public class ConsultaEquip {
 		return equipList;
 	}
 	
-	public List<Equip> fitraEquipPrecio(int precio, int modo){
+	public List<Equip> filtraEquipPrecio(int precio, int modo){
 		List<Equip> equipList = CreacionListadoEquip();
 		
 		List<Equip> seleccionados = new ArrayList<>();
@@ -47,7 +47,7 @@ public class ConsultaEquip {
 		return equipList;
 	}
 	
-	public List<Equip> fitraEquipRango(Rank rango){
+	public List<Equip> filtraEquipRango(Rank rango){
 		List<Equip> equipList = CreacionListadoEquip();
 		
 		List<Equip> seleccionados = new ArrayList<>();
