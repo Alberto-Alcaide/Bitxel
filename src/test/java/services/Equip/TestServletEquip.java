@@ -36,7 +36,9 @@ public class TestServletEquip {
 		
 		new PostEquipServlet().doPost(request,response);
 		
-		//System.out.println(stringWriter);
+		System.out.println(stringWriter);
+		
+		// JSON con la respuesta
 		
 		JSONObject resultado = new JSONObject();
 		/*

@@ -15,10 +15,10 @@ public class ConsultaStats {
         
 		statsList.add( new StatsImpl(100, 50, 0, 1, 10, 5, 20));
 
-		StatsImpl objeto2 = new StatsImpl(80, 70, 250, 3, 15, 8, 15);
+		StatsImpl objeto2 = new StatsImpl(80, 70, 250, 1, 15, 8, 15);
 		statsList.add(objeto2);
 
-		StatsImpl objeto3 = new StatsImpl(120, 40, 500, 5, 20, 10, 25);
+		StatsImpl objeto3 = new StatsImpl(120, 40, 500, 1, 20, 10, 25);
 		statsList.add(objeto3);
 
 		StatsImpl objeto4 = new StatsImpl(90, 60, 150, 2, 12, 6, 18);   
@@ -27,7 +27,7 @@ public class ConsultaStats {
 		return statsList;
 	}
 	
-	public List<Stats> fitraStatsNivel(Rank rango){
+	public List<Stats> fitraStatsRango(Rank rango){
 		List<Stats> statsList = CreacionListadoStats();
 		
 		List<Stats> seleccionados = new ArrayList<>();

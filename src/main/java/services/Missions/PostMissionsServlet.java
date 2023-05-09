@@ -15,7 +15,7 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 
 import dao.Equip.Equip;
-import dao.Missions.ConsultaMissions;
+import manager.Missions.ConsultaMissions;
 import dao.Missions.Missions;
 import manager.Equip.ConsultaEquip;
 
