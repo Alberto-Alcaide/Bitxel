@@ -10,7 +10,7 @@ import dao.Missions.MissionsImpl;
 
 public class ConsultaMissions {
 	
-	public List<Missions> CreacionListadoMissions()
+	public static List<Missions> CreacionListadoMissions()
 	{
 		List<Missions> missions = new ArrayList<>();
 		

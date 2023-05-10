@@ -10,7 +10,7 @@ import dao.Stats.StatsImpl;
 
 public class ConsultaStats {
 	
-	public List<Stats> CreacionListadoStats(){
+	public static List<Stats> CreacionListadoStats(){
 		List<Stats> statsList = new ArrayList<>();
         
 		statsList.add( new StatsImpl(100, 50, 0, 1, 10, 5, 20));

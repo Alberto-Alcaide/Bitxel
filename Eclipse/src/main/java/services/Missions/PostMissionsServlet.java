@@ -22,7 +22,7 @@ import manager.Equip.ConsultaEquip;
 /**
  * Servlet implementation class PostEquipServlet
  */
-@WebServlet("/PostEquip")
+@WebServlet("/PostMissions")
 public class PostMissionsServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -34,26 +34,6 @@ public class PostMissionsServlet extends HttpServlet {
         // TODO Auto-generated constructor stub
     }
 
-    /*
-	protected void doGet(HttpServletRequest req, HttpServletResponse resp) 
-			throws ServletException, IOException {
-		
-		//resp.setContentType("application/json");
-		//resp.setCharacterEncoding("utf-8");
-		
-		resp.setContentType("text/plain");
-		PrintWriter writer = resp.getWriter();
-		
-		List<Equip> listaEquipamiento = ConsultaEquip.CreacionListadoEquip();
-		
-		writer.append("Hola");
-		
-		for (Equip i : listaEquipamiento) {
-			writer.append(i.toString()+"\n");
-		}
-	}
-	*/
-    
     ConsultaMissions cm = new ConsultaMissions();
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)

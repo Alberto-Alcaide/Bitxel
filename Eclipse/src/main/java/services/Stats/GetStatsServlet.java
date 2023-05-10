@@ -1,43 +1,44 @@
 package services.Stats;
 
 import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.List;
 
-import javax.servlet.Servlet;
-import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
-import javax.servlet.ServletRequest;
-import javax.servlet.ServletResponse;
+import javax.servlet.annotation.WebInitParam;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
-public class GetStatsServlet implements Servlet {
 
-	@Override
-	public void init(ServletConfig config) throws ServletException {
-		// TODO Auto-generated method stub
+import dao.Stats.Stats;
+import manager.Stats.ConsultaStats;
 
+@WebServlet(urlPatterns = {
+		"/GetStats"})
+
+//initParams = {@WebInitParam(name = "marca", value = "")})
+
+public class GetStatsServlet extends HttpServlet {
+	
+	private static final long serialVersionUID = 1L;
+
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) 
+			throws ServletException, IOException {
+		
+		//resp.setContentType("application/json");
+		//resp.setCharacterEncoding("utf-8");
+		
+		resp.setContentType("text/plain");
+		PrintWriter writer = resp.getWriter();
+		
+		List<Stats> listaStats = ConsultaStats.CreacionListadoStats();
+		
+		writer.append("Stats");
+		
+		for (Stats s : listaStats) {
+			writer.append(s.toString()+"\n");
+		}
 	}
-
-	@Override
-	public ServletConfig getServletConfig() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-
-	}
-
-	@Override
-	public String getServletInfo() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public void destroy() {
-		// TODO Auto-generated method stub
-
-	}
-
 }

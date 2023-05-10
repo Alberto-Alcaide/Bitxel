@@ -15,9 +15,9 @@ import dao.Equip.Equip;
 import manager.Equip.ConsultaEquip;
 
 @WebServlet(urlPatterns = {
-		"/getEquip"},
+		"/GetEquip"})
 
-initParams = {@WebInitParam(name = "marca", value = "")})
+//initParams = {@WebInitParam(name = "marca", value = "")})
 
 public class GetEquipServlet extends HttpServlet {
 	
@@ -34,7 +34,7 @@ public class GetEquipServlet extends HttpServlet {
 		
 		List<Equip> listaEquipamiento = ConsultaEquip.CreacionListadoEquip();
 		
-		writer.append("Hola");
+		writer.append("Equip");
 		
 		for (Equip i : listaEquipamiento) {
 			writer.append(i.toString()+"\n");

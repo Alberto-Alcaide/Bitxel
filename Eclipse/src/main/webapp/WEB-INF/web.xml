@@ -11,8 +11,59 @@
     <servlet-name>GetEquipServlet</servlet-name>
     <servlet-class>services.Equip.GetEquipServlet</servlet-class>
   </servlet>
-  <servlet-mapping>
+   <servlet-mapping>
     <servlet-name>GetEquipServlet</servlet-name>
-    <url-pattern>/GetEquipServlet</url-pattern>
+    <url-pattern>/GetEquip</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>PostEquipServlet</display-name>
+    <servlet-name>PostEquipServlet</servlet-name>
+    <servlet-class>services.Equip.PostEquipServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PostEquipServlet</servlet-name>
+    <url-pattern>/PostEquip</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>GetStatsServlet</display-name>
+    <servlet-name>GetStatsServlet</servlet-name>
+    <servlet-class>services.Stats.GetStatsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetStatsServlet</servlet-name>
+    <url-pattern>/GetStats</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>PostStatsServlet</display-name>
+    <servlet-name>PostStatsServlet</servlet-name>
+    <servlet-class>services.Stats.PostStatsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PostStatsServlet</servlet-name>
+    <url-pattern>/PostStats</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>GetMissionsServlet</display-name>
+    <servlet-name>GetMissionsServlet</servlet-name>
+    <servlet-class>services.Missions.GetMissionsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetMissionsServlet</servlet-name>
+    <url-pattern>/GetMissions</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>PostMissionsServlet</display-name>
+    <servlet-name>PostMissionsServlet</servlet-name>
+    <servlet-class>services.Missions.PostMissionsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PostMissionsServlet</servlet-name>
+    <url-pattern>/PostMissions</url-pattern>
+  </servlet-mapping>
+
 </web-app>

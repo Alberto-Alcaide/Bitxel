@@ -48,20 +48,9 @@ public class TestServletEquip {
 			resultado.put("resultado", stringWriter);
 		*/
 	
-		resultado.put("code", "ok");
-		resultado.put("mensaje", "ok");
-		resultado.put("resultado", stringWriter);
+		if (resultado.get("resultado")==comprobar que sea igual que los objetos a enseñar)
 		
 		
-		try
-		{
-			writer.write(resultado.toString());
-		} finally
-		{
-			writer.close();
-		}
 		
-		//Meter Json, como en el post.  code, mensaje, resultado.
-		// Conectar a base datos (No prioritario)
 	}
 }

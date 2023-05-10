@@ -31,26 +31,6 @@ public class PostEquipServlet extends HttpServlet {
         super();
         // TODO Auto-generated constructor stub
     }
-
-    /*
-	protected void doGet(HttpServletRequest req, HttpServletResponse resp) 
-			throws ServletException, IOException {
-		
-		//resp.setContentType("application/json");
-		//resp.setCharacterEncoding("utf-8");
-		
-		resp.setContentType("text/plain");
-		PrintWriter writer = resp.getWriter();
-		
-		List<Equip> listaEquipamiento = ConsultaEquip.CreacionListadoEquip();
-		
-		writer.append("Hola");
-		
-		for (Equip i : listaEquipamiento) {
-			writer.append(i.toString()+"\n");
-		}
-	}
-	*/
     
     ConsultaEquip em = new ConsultaEquip();
 	/**
