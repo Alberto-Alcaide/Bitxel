@@ -40,8 +40,9 @@ public class TestServletEquip {
 		
 		// JSON con la respuesta
 		
-		JSONObject resultado = new JSONObject();
+		JSONObject resultado = new JSONObject(stringWriter.toString());
 		/*
+		 * resultado.get()
 			resultado.put("code", "ERROR");
 			resultado.put("mensaje", "Listado Vacío");
 			resultado.put("resultado", stringWriter);
