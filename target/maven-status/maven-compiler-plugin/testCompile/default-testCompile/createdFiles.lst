@@ -1,0 +1,6 @@
+dao\Equip\TestEquip.class
+services\Equip\TestServletEquip.class
+services\Missions\TestServletMissions.class
+dao\Missions\TestMissions.class
+services\Stats\TestServletStats.class
+dao\Stats\TestStats.class
